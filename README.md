@@ -1,5 +1,12 @@
 💳 ApexLedger: Immutable Financial Ledger & Fraud Analytics Engine
+
+
+
 ![SQL](https://img.shields.io/badge/SQL-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+
+
+
  An end-to-end database engineering project featuring a custom-designed, high-integrity relational schema for a modern FinTech platform backend. It replaces volatile application-layer checks with zero-trust database constraints, implements an absolute write-only transactional ledger, and deploys self-joining time-series queries to expose complex, high-velocity fraud vectors.
 
 💡 System Concept & Architecture
