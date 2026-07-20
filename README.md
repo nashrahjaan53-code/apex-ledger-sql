@@ -1,70 +1,260 @@
-💳 ApexLedger: Immutable Financial Ledger & Fraud Analytics Engine
+<div align="center">
 
-![SQL](https://img.shields.io/badge/SQL-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+# 💳 ApexLedger
+
+### Immutable Financial Ledger & Fraud Analytics Engine
+
+*A production-inspired FinTech database engineering project demonstrating immutable transaction processing, fraud detection, zero-trust data integrity, and enterprise-grade SQL architecture.*
+
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql)
+![SQL](https://img.shields.io/badge/SQL-Advanced-orange?style=for-the-badge)
+![Database](https://img.shields.io/badge/Architecture-Enterprise-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
+
+</div>
+
+---
+
+# 📖 Overview
+
+Most SQL projects stop at simple CRUD operations.
+
+**ApexLedger** explores how modern financial institutions build **immutable ledger systems** capable of preserving complete transaction history while enabling high-performance reporting, fraud detection, and regulatory compliance.
+
+Instead of updating balances directly, every financial event is permanently recorded, allowing historical balances to be reconstructed at any point in time.
+
+This project demonstrates enterprise database engineering concepts commonly found in digital banking and payment platforms.
+
+---
+
+# ✨ Key Features
+
+## 🔒 Immutable Transaction Ledger
+
+- Append-only transaction model
+- Complete audit trail
+- Historical balance reconstruction
+- No destructive updates
+
+---
+
+## ⚡ Fraud Analytics Engine
+
+Detects suspicious financial activity using SQL analytics.
+
+Examples include:
+
+- Rapid peer-to-peer transfers
+- High-frequency transactions
+- Transaction velocity analysis
+- Time-series anomaly detection
+
+---
+
+## 🛡 Zero-Trust Data Integrity
+
+Financial integrity is enforced directly inside the database using:
+
+- CHECK Constraints
+- Foreign Keys
+- NOT NULL Constraints
+- Referential Integrity
+- Restricted Deletes
+
+Impossible balances are rejected before reaching the application.
+
+---
+
+## 📊 Reporting Layer
+
+Production-ready analytical views provide:
+
+- Historical Account Statements
+- Wallet Balances
+- Transaction Summaries
+- Compliance Reports
+- Fraud Dashboards
+
+---
+
+# 🏗 Architecture
+
+```mermaid
+flowchart LR
+
+A[External Funding]
+B[Immutable Ledger]
+C[Indexed SQL Views]
+D[Fraud Analytics]
+E[Compliance Dashboard]
+
+A --> B
+B --> C
+C --> D
+D --> E
+```
+
+---
+
+# 🗄 Database Design
+
+## Core Entities
+
+| Table | Purpose |
+|--------|----------|
+| Accounts | Customer financial accounts |
+| Wallets | Digital balance containers |
+| Transactions | Immutable financial ledger |
+| Fraud Logs | Compliance & fraud events |
+| Customers | Identity & KYC information |
+
+---
+
+# 🚀 Engineering Highlights
+
+### ✔ Immutable Ledger Architecture
+
+Every transaction is permanently stored.
+
+Historical balances are reproduced mathematically instead of relying on mutable balance columns.
+
+---
+
+### ✔ Enterprise Referential Integrity
+
+Critical financial relationships are protected using explicit foreign key constraints and restricted deletes.
+
+---
+
+### ✔ Performance Optimization
+
+Designed for high-volume financial systems.
+
+Includes:
+
+- Composite B-Tree Indexes
+- Indexed Timestamp Queries
+- Optimized Join Strategies
+- Reduced Table Scans
+
+---
+
+### ✔ Fraud Detection Queries
+
+Advanced SQL identifies:
+
+- Transaction bursts
+- Velocity attacks
+- Suspicious money movement
+- Abnormal transaction chains
+
+---
+
+### ✔ Historical Reporting
+
+Uses SQL Views and Window Functions to generate:
+
+- Running balances
+- Historical statements
+- Financial summaries
+- Compliance reports
+
+---
+
+# 🛠 Technologies Used
+
+| Layer | Technology |
+|---------|------------|
+| Database | MySQL 8.0 |
+| Language | SQL |
+| Indexing | B-Tree |
+| Constraints | CHECK, FK |
+| Analytics | Window Functions |
+| Reporting | SQL Views |
 
 
 
-An end-to-end database engineering project featuring a custom-designed, high-integrity relational schema for a modern FinTech platform backend. It replaces volatile application-layer checks with zero-trust database constraints, implements an absolute write-only transactional ledger, and deploys self-joining time-series queries to expose complex, high-velocity fraud vectors.
+# 📈 Project Metrics
 
-📊 Core Technical Specifications
-Database Component	Implementation Detail	Architecture Goal
-Engine Configuration	MySQL 8.0+ Relational Schema	Enterprise Stability & Compliance
-Core Core Entities	5 Interconnected Tables	Fully Relational Transactional Flow
-Data Integrity Layer	Hardware CHECK & FOREIGN KEY Guardrails	Application-Agnostic Zero-Trust Security
-Optimization Layer	Target B-Tree Indexes on High-Velocity Columns	Elimination of Full-Table Scans
-Analytics Layer	Partitioned Window Functions & Self-Joins	Live Executive BI & Threat Profiling
+| Metric | Value |
+|----------|--------|
+| Database | MySQL 8 |
+| Core Tables | 5 |
+| Analytical Views | Multiple |
+| Constraints | Enterprise Grade |
+| Fraud Engine | Included |
+| Historical Ledger | Included |
+| Dashboard | Included |
 
-💡 System Design: Inside the Ledger
-Standard tutorial projects update financial accounts using basic, high-risk UPDATE statements (e.g., SET balance = balance - 100). In production banking environments, changing data in place violates financial regulatory standards.
+---
 
-ApexLedger implements a strict immutable, write-only transactional ledger. Every transaction is permanently recorded as a historical row. Live user balances are computed chronologically using rolling window functions over indexed data.
+# 🎯 What This Project Demonstrates
+
+✅ Advanced SQL
+
+✅ Enterprise Database Design
+
+✅ Immutable Ledger Systems
+
+✅ Banking Data Architecture
+
+✅ Fraud Detection
+
+✅ Query Optimization
+
+✅ Referential Integrity
+
+✅ Analytical SQL
+
+✅ Financial Reporting
+
+---
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ApexLedger.git
+```
+
+Open **apex_ledger.sql** inside MySQL Workbench.
+
+Execute the complete script.
+
+The script automatically:
+
+- Creates the database
+- Builds all tables
+- Applies constraints
+- Creates indexes
+- Generates analytical views
+- Seeds production-style sample data
+
+---
+
+# 📊 Dashboard
+
+The project automatically generates reporting datasets powering dashboards such as:
+
+- 📈 Historical Balance Statements
+- 🚨 Fraud Monitoring
+- ⚡ Transaction Velocity
+- 📊 Executive Performance Metrics
+
+---
+
+# 💡 Why ApexLedger?
+
+The objective wasn't simply to build another SQL database.
+
+The goal was to simulate the architecture used by modern financial platforms where data integrity, auditability, scalability, and regulatory compliance are critical requirements.
+
+This project emphasizes engineering practices that extend beyond CRUD applications and reflects how production financial databases are designed.
 
 
-[External Funding Source] ──> [Immutable Ledger Entry] ──> [Indexed Views] ──> [Dashboard Panel]
-                                      │
-                                      └───> [Velocity Analytics Scan] ───> [Fraud Logs Trigger]
-The 5-Table Architectural Framework
-users: Customer profiles tracking identity status (KYC_STATUS) and compliance risk profiles.
+<div align="center">
 
-accounts: Traditional funding links with custom status mapping.
+⭐ If you found this project interesting, consider giving it a star!
 
-wallets: Digital cash records enforcing atomic balance protections.
-
-transactions: The core immutable transactional ledger tracking fund movements.
-
-fraud_logs: Target incident logs for compliance engine triggers.
-
-🛠️ Core Engineering Highlights
-🔒 Zero-Trust Hardening: Data integrity is protected at the hardware layer using rigid CHECK constraints (balance≥0.00 and amount>0.00), rendering it mathematically impossible for bugs in frontend software to force a negative balance or an invalid transaction.
-
-1
-Establish Referential Integrity
-Data Layer
-Configured explicit ON DELETE RESTRICT rules across critical foreign keys, ensuring historical transactional data can never be orphaned or corrupted by accidental profile deletions.
-
-2
-Deploy Target Performance Indexes
-Optimization Layer
-Engineered B-Tree indexes on high-velocity transactional columns and timestamps (idx_transactions_timestamp_type) to optimize complex multi-table joins and keep queries highly performant under production scaling.
-
-3
-Isolate Behavioral Anomalies
-Analytics Layer
-Developed self-joining time-series queries that isolate potential money-laundering patterns by tracking multiple rapid-fire peer-to-peer transfers originating from the same sender within a strict 60-second window.
-
-4
-Abstract via Reusable Views
-Reporting Layer
-Abstracted intensive rolling calculations into permanent database Views (view_historical_account_ledgers), allowing downstream BI tools or application frameworks to pull immaculate running balances with a clean, single-line query.
-
-
-📈 Live BI Dashboard Panels Included
-The analytics engine automatically populates three operational panels to power live compliance and performance dashboards:
-Real-Time Historical Balance Statements: Tracks dynamic, transactional cash flows and historical wallet status per user via partitioned window mechanics.
-Velocity Threat Monitoring Panel: Instantly exposes high-risk users bypassing traditional application velocity checks using time-series intervals.
-Executive Platform Performance Check: Evaluates global processing volume, average transaction sizing, and system success percentages using safe NULLIF structural logic.
-
-🚀 One-Click Local Deployment
-Clone this repository to your local machine.
-Open apex_ledger.sql inside MySQL Workbench or your preferred SQL terminal interface.
-Execute the entire file. The script cleanly builds the workspace, generates indexed relationships, seeds a multi-week production mock data matrix, and outputs the live analytical dashboard panels instantly.
+</div>
